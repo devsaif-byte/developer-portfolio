@@ -13,7 +13,7 @@ h1 {
 }
 
 .top-banner {
-  display: flex;
+  /* display: flex; */
   background-image: url(/images/top-banner.png);
   background-repeat: no-repeat;
 }
@@ -29,6 +29,9 @@ h1 {
   display: inline-block;
   width: 50%;
   padding: 60px 60px;
+}
+.banner-half-one h1,h2{
+    text-transform: capitalize;
 }
 
 .banner-second-half-image {
@@ -52,13 +55,68 @@ h1 {
   border-radius: 5px;
   display: inline-block;
   margin-top: 25px;
+  transition: all .5s ease;
+}
+
+.buttons:hover{
+    background-image: linear-gradient(rgba(253, 180, 43, 0.924), rgba(246, 88, 60, 0.952));
+    color: rgb(255, 255, 255);
 }
 
 /* Second Banner */
 
 .dream-big {
-  display: flex;
+  /* display: flex; */
   background-image: url(images/dream-bg.png);
   background-repeat: no-repeat;
   background-position-x: right;
+}
+
+/* Experience Section */
+
+.experience {
+  margin-bottom: 50px;
+}
+
+#exp-header {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.boxes {
+  box-sizing: border-box;
+  padding: 30px;
+  width: 50%;
+  box-shadow: 5px 7px 40px grey;
+  transition: all .3s ease;
+  background-color: whitesmoke;
+}
+.boxes:hover{
+    box-shadow: none;
+}
+
+#for-blueish-border {
+  margin-right: 25px;
+  border-left: 7px solid;
+  border-image: linear-gradient(322deg, blue, cyan);
+  border-image-slice: 1;
+}
+#for-blueish-border h3{
+    color: rgb(43, 113, 224);
+}
+#for-redish-border {
+  margin-left: 25px;
+  border-left: 7px solid;
+  border-image: linear-gradient(180deg, lightsalmon, tomato);
+  border-image-slice: 1;
+}
+#for-redish-border h3{
+    color: #ff7601f2;
+}
+
+footer{
+    margin: 70px 0;
+}
+footer p{
+    text-align: center;
 }
